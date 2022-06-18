@@ -1,0 +1,180 @@
+/*
+# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Cyan: hsl(179, 62%, 43%)
+- Bright Yellow: hsl(71, 73%, 54%)
+
+### Neutral
+
+- Light Gray: hsl(204, 43%, 93%)
+- Grayish Blue: hsl(218, 22%, 67%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 16px
+
+### Font
+
+- Family: [Karla](https://fonts.google.com/specimen/Karla)
+- Weights: 400, 700
+*/
+
+:root {
+    --cyan: hsl(179, 62%, 43%);
+    --bright-yellow: hsl(71, 73%, 54%);
+
+    --light-gray: hsl(204, 43%, 93%);
+    --grayish-blue: hsl(218, 22%, 67%);
+
+    --light-gray-opacity: hsl(204, 43%, 93%, 0.7);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+
+    background-color: var(--light-gray);
+}
+
+main {
+    width: 85%;
+    max-width: 330px;
+    margin: 40px auto;
+
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+    box-shadow: 0px 8px 20px -8px var(--grayish-blue);
+}
+
+.container .container-desc {
+    background-color: white;
+    padding: 25px;
+
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.container .container-desc h1 {
+    color: var(--cyan);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.container .container-desc p:nth-child(2) {
+    color: var(--bright-yellow);
+    font-weight: 700;
+    font-size: 15px;
+
+    margin-top: 25px;
+}
+
+.container .container-desc p:nth-child(3) {
+    color: var(--grayish-blue);
+    font-size: 14px;
+
+    margin-top: 20px;
+    line-height: 25px;
+}
+
+.container .container-subs {
+    background-color: var(--cyan);
+    padding: 25px;
+}
+
+.container .container-subs h2 {
+    font-size: 16px;
+    color: var(--light-gray);
+}
+
+.container .container-subs p:nth-child(2) {
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--light-gray);
+
+    margin-top: 18px;
+
+    position: relative;
+}
+
+.container .container-subs span {
+    color: var(--light-gray-opacity);
+    font-size: 15px;
+    font-weight: 400;
+
+    position: absolute;
+    top: 25%;
+    left: 70px;
+}
+
+.container .container-subs p:nth-child(3) {
+    color: var(--light-gray);
+    font-size: 15px;
+
+    margin-top: 10px;
+}
+
+.container .container-subs button {
+    width: 100%;
+    height: 50px;
+
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+
+    border: 1px solid transparent;
+    border-radius: 5px;
+
+    margin-top: 30px;
+
+    color: white;
+    background-color: var(--bright-yellow);
+    box-shadow: 0px 8px 10px rgba(14, 130, 108, 0.5);
+}
+
+.container .container-comp {
+    background-color: rgb(77, 186, 183);
+
+    padding: 25px;
+
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.container .container-comp h2 {
+    font-size: 18px;
+
+    color: var(--light-gray);
+}
+
+.container .container-comp ul {
+    margin-top: 20px;
+
+    list-style-type: none;
+}
+
+.container .container-comp li {
+    font-size: 13.5px;
+    font-weight: 400;
+    color: var(--light-gray);
+    line-height: 20px;
+}
